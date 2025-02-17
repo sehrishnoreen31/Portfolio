@@ -91,7 +91,7 @@ main{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 5rem;
+            gap: 3rem;
             justify-content:center;
             & .skill{
                 padding: 5px;
