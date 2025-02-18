@@ -9,19 +9,19 @@ body{
 }
 
 header{
-    margin: 5px auto;
-    max-width: 90vw;
-    padding: 5px;
+    margin: 0 auto 5px auto;
+    /* max-width: 95vw; */
+    padding: 10px 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background-color: rgb(75, 24, 75);
+    color: rgb(255, 255, 255);
     & .contact{
         display: flex;
         flex-direction: column;
-        color: rgb(31, 31, 31);
     }
     & .nav-bar{
         display: flex;
@@ -30,15 +30,15 @@ header{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.7rem;
             list-style: none;
             & li{
                 & a{
                     padding: 5px;
                     text-decoration: none;
                     align-items: center;
-                    color: rgb(75, 24, 75);
-                    font-weight: 700;
+                    color: rgb(255, 255, 255);
+                    font-weight: 600;
                     font-size: larger;
                     &:hover{
                         text-decoration: underline;
