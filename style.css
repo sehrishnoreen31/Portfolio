@@ -142,6 +142,36 @@ main{
             }
         }
     }
+
+    /* recommendations section */
+    & .recommendations{
+        margin-top: 30px;
+        max-width: 90vw;
+        padding: 5px;
+        text-align: center;
+        align-items: center;
+        & h2{
+            padding: 5px;
+            color: rgb(75, 24, 75);
+            margin: 5px 0;
+        }
+        & .reco-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            & .recommendation{
+                padding: 10px;
+                border: 1px solid transparent;
+                font-style: italic;
+                max-width: 250px;
+                border-radius: 20px;
+                box-shadow: 5px 4px 2px 1px gray;
+                background-color: rgba(219, 219, 219, 0.342);
+            }
+        }
+    }
 }
 
 
