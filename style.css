@@ -37,7 +37,7 @@ header{
                     padding: 5px;
                     text-decoration: none;
                     align-items: center;
-                    color: rgb(31, 31, 31);
+                    color: rgb(75, 24, 75);
                     font-weight: 700;
                     font-size: larger;
                     &:hover{
@@ -94,14 +94,19 @@ main{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 3rem;
+            gap: 2rem;
             justify-content:center;
             & .skill{
-                padding: 5px;
+                padding: 10px 20px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 text-align: center;
+                border-radius: 20px;
+                max-width: 250px;
+                width: 200px;
+                box-shadow: 3px 2px 1px 1px rgb(209, 209, 209);
+                background-color: rgba(228, 227, 227, 0.342);
                 & figure{
                     & img{
                         width: 100px;
@@ -130,19 +135,29 @@ main{
             margin: 5px;
             padding: 5px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex-wrap: wrap;
-            gap: 1rem;
-            & ul{
-                list-style: none;
-                & li{
-                    font-weight: 600;
-                    & a{
-                        text-decoration: none;
-                        color:rgb(168, 11, 142);
+            gap: 2rem;
+            & .project{
+                padding: 10px;
+                max-width: 250px;
+                border-radius: 20px;
+                box-shadow: 3px 2px 1px 1px rgb(209, 209, 209);
+                background-color: rgba(228, 227, 227, 0.342);
+                & ul{
+                    list-style:none;
+                    & li{
+                        font-weight: 600;
+                        font-size: large;
+                        & a{
+                            text-decoration: none;
+                            color:rgb(168, 11, 142);
+                        }
                     }
                 }
+
             }
+            
         }
     }
 
@@ -151,27 +166,78 @@ main{
         margin-top: 30px;
         max-width: 90vw;
         padding: 5px;
-        text-align: center;
-        align-items: center;
         & h2{
             padding: 5px;
             color: rgb(75, 24, 75);
             margin: 5px 0;
         }
         & .reco-container{
+            text-align: center;
+            align-items: center;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem;
+            gap: 2rem;
             & .recommendation{
                 padding: 10px;
                 border: 1px solid transparent;
                 font-style: italic;
                 max-width: 250px;
+                height: 200px;
+                overflow:hidden;
+                text-overflow: ellipsis;
                 border-radius: 20px;
-                box-shadow: 5px 4px 2px 1px gray;
-                background-color: rgba(219, 219, 219, 0.342);
+                box-shadow: 3px 2px 1px 1px gray;
+                background-color: rgba(228, 227, 227, 0.342);
+                &:hover{
+                    overflow: auto;
+                }
+            }
+        }
+    }
+
+    /* New ecommendation Section */
+    & .new_reco{
+        margin-top: 30px;
+        max-width: 90vw;
+        padding: 5px;
+        & form{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 70vw;
+            margin: 10px auto;
+            & legend{
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+            & input{
+                border-radius: 20px;
+                height: 2rem;
+                padding: 5px 10px;
+                align-items: center;
+                border-color: transparent;
+                background-color: rgba(179, 179, 179, 0.342);
+            }
+            & textarea{
+                border-radius: 20px;
+                padding: 20px 10px;
+                align-items: center;
+                border-color: transparent;
+                background-color: rgba(179, 179, 179, 0.342);
+            }
+            & button{
+                margin-top: 10px;
+                width: 100px;
+                max-width: 100px;
+                height: 2rem;
+                color: rgb(255, 255, 255);
+                font-size: large;
+                border-radius: 30px;
+                border-color: transparent;
+                background-color: rgb(75, 24, 75);
             }
         }
     }
@@ -292,6 +358,9 @@ main{
 
     .project-container {
         font-size: 13px;
+    }
+    form{
+        width: 90vw;
     }
 }
 
